@@ -76,7 +76,7 @@ class Conection
             $this->issetLdapExtension();
             foreach ($this->RequiredsFunctions() as $key => $value) (function_exists($value)) ? true : throw new Exception("Falta la función {$value}", 1);
         } catch (\Exception $th) {
-            throw $th->getMessage();
+            throw new Exception( $th->getMessage());
         }
     }
     public function issetLdapExtension(): void
