@@ -1,7 +1,6 @@
 {
   "name": "plenusservices/php-ldap-auth",
   "description": "LDAP autentication with php",
-  "type": "project",
   "license": "MIT",
   "authors": [
     {
@@ -10,6 +9,7 @@
     }
   ],
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "php": "^7.3|^8.0"
   },
